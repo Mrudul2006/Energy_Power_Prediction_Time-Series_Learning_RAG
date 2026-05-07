@@ -1,0 +1,8 @@
+.venv
+__pycache_
+__pycache__
+node_modules
+.next
+tsconfig.tsbuildinfo
+dist/
+benchmark_outputs*/

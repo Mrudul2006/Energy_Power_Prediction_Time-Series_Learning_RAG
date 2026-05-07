@@ -1,0 +1,31 @@
+{
+  "model": "LinearBaselineForecaster",
+  "model_config": {
+    "input_size": 336,
+    "horizon": 168,
+    "input_dim": 1,
+    "model_type": "nlinear",
+    "moving_average": 25,
+    "individual": false
+  },
+  "train_config": {
+    "input_size": 336,
+    "horizon": 168,
+    "epochs": 5,
+    "batch_size": 64,
+    "learning_rate": 0.001,
+    "weight_decay": 0.0001,
+    "validation_fraction": 0.0,
+    "device": "cpu",
+    "random_state": 7,
+    "gradient_clip": 1.0,
+    "verbose": false
+  },
+  "losses": [
+    0.16853308909753917,
+    0.1440834807257062,
+    0.1399076396329388,
+    0.14129495381518514,
+    0.13689048598021128
+  ]
+}

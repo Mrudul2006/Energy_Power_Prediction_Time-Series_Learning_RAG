@@ -1,0 +1,16 @@
+numpy
+pandas
+scipy
+scikit-learn
+torch
+statsmodels
+prophet
+tbats
+xgboost
+lightgbm
+openpyxl
+fastapi
+uvicorn
+joblib
+httpx
+anthropic

@@ -1,0 +1,16 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(.venv/Scripts/python *)",
+      "Bash(nvidia-smi)",
+      "Bash(python *)",
+      "Bash(pip install *)",
+      "Bash(where python *)",
+      "Bash(.venv/Scripts/python.exe -c \"import uvicorn, fastapi, pydantic; print\\('uvicorn', uvicorn.__version__\\); print\\('fastapi', fastapi.__version__\\); print\\('pydantic', pydantic.__version__\\)\")",
+      "Bash(.venv/Scripts/pip install *)",
+      "Bash(.venv/Scripts/python.exe -c \"import uvicorn, fastapi, pydantic; print\\('uvicorn', uvicorn.__version__, '| fastapi', fastapi.__version__, '| pydantic', pydantic.__version__\\)\")",
+      "Bash(.venv/Scripts/python.exe -c ' *)",
+      "Bash(npx tsc *)"
+    ]
+  }
+}
