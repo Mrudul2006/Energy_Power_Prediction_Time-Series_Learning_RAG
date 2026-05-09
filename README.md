@@ -91,7 +91,7 @@ If you intend to use the Explainable AI feature, ensure you have set up your API
 
 ## 🧠 How the Architecture Works
 
-1. **The Base Prediction**: The backend evaluates a pre-trained ensemble model to establish a baseline forecast for grid demand.
+1. **The Base Prediction**: The backend evaluates a pre-trained ensemble and auto-regressor model to establish a baseline forecast for grid demand.
 2. **The Online Correction**: If historical "actual" values are provided by the frontend, the `OnlineLearner` class fits a Ridge regression model against the recent residual errors. It then adjusts the base prediction, returning a highly accurate `predicted_online` value.
 3. **The AI Explanation**: When the "Generate AI Insights" button is clicked, the frontend serializes the entire current forecast window and sends it to `/api/explain`. The backend parses this, builds a structured prompt describing grid peaks/troughs, and queries the LLM to return structured JSON insights.
 
